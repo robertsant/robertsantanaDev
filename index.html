@@ -1,7 +1,7 @@
-
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,58 +13,70 @@
       margin: 0;
       padding: 0;
     }
-    
-    .container {
-      width: 800px;
-      margin: 0 auto;
-      background-color: rgba(255, 255, 255, 0.5);
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    
-    h1 {
-      color: #333333;
-      text-align: center;
-    }
-    
-    p {
-      color: #0d0c0c;
-      text-align: center;
-    }
-    
-    .contact-links {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-    }
-    
-    .contact-links a {
-      display: flex;
-      align-items: center;
-      background-color: #4c51af;
-      color: rgb(247, 250, 248);
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 20px;
-      margin-right: 15px;
-    }
-    
-    .contact-links a:hover {
-      opacity: 0.8;
-    }
-    
-    .social-icon {
-      display: flex;
-      align-items: center;
-      margin-right: 5px;
-    }
-    
-    .social-icon img {
-      width: 30px;
-      height: 30px;
-      margin-right: 5px;
-    }
+.container {
+  width: 100%;
+  max-width: 600px; /* Define a largura máxima da container */
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Adicionado para centralizar os elementos */
+}
+
+h1 {
+  color: #333333;
+  text-align: center;
+}
+
+p {
+  color: #0d0c0c;
+  text-align: center;
+}
+
+.contact-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Alterado para exibir os botões em uma coluna */
+  align-items: center; /* Adicionado para centralizar os botões horizontalmente */
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #101be4;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease; /* Adicionado para animação de transição */
+}
+
+.contact-links a:hover {
+  transform: scale(1.2); /* Adicionado para aumentar o tamanho do botão */
+  background-color: #070707;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+/* Regra de mídia para dispositivos móveis */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px; /* Ajusta o espaçamento interno para dispositivos móveis */
+  }
+}
   </style>
 </head>
 <body>
@@ -77,19 +89,19 @@
       <a href="https://www.linkedin.com/in/robert-santana-7a230122b">
         <div class="social-icon">
           <img src="linkedin.png" alt="Linkedin">
-          <span>L1nk3d1n</span>
+          <span>LinkedIn</span>
         </div>
       </a>
       <a href="https://api.whatsapp.com/send/?phone=11977144668&text&type=phone_number&app_absent=0">
         <div class="social-icon">
           <img src="whatsapp.png" alt="WhatsApp">
-          <span>Wha7sApp</span>
+          <span>WhatsApp</span>
         </div>
       </a>
       <a href="https://www.tiktok.com/@_robertsantana?_t=8cQ2xToR16c&_r=1">
         <div class="social-icon">
           <img src="tiktok.png" alt="tiktok">
-          <span>71k70k</span>
+          <span>TikTok</span>
         </div>
       </a>
     </div>
